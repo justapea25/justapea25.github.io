@@ -264,11 +264,14 @@ footer {
   border-top: 4px solid var(--main-red);
 
 }
-.footer > p {
+footer > p {
   margin: 2rem;
 }
-.footer i {
+/* .footer i {
 vertical-align: middle;
-}
+} */
 /* @media (max-width 28.75em) */
 /* End footer section */
+footer a:hover {
+color: var(--main-red);
+}
