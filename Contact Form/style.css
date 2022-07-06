@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+:root {
+      --color-white: #f3f3f3;
+      --color-dark-purple: #898AA6;
+      --color-light-purple: #C9BBCF;
+      --color-light-green: #D6EFED;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
