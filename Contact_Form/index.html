@@ -5,49 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container">
     <header>
-        <h1 id="title" class="text-center"> The Contact Form</h1>
+        <h1 id="title" class="text-center"> Contact Us</h1>
         <p id="description" class="description text-center"> If you want to contact me, please fill in this form</p>
     </header>
-    <form id="survey-form">
+    <form id="survey-form" action="processing.php" method="post" enctype="multipart/form-data">
         <div class="form-group">
-            <label id="name-label" for="name"> Name </label>
-            <input name="name" type="text" id="name" class="form-control" placeholder="Enter your name: " required>
-        </div>
-        <div class="form-group">
-            <label id="email-label" for="email"> Email </label>
-            <input name="email" type="email" id="email" class="form-control" placeholder="Enter your email: " required>
-        </div>
-        <div class="form-group">
-            <label id="phone-label" for="phone"> Email </label>
-            <input name="phone" type="phone" id="phone" class="form-control" placeholder="Enter your phone number: " required>
-        </div>
-        <div class="form-group">
-            <p> What are your current level of using HTML/CSS? </p>
-            <label> <input name="skill-level" type="radio" class="input-radio" value="Beginner"> Beginner </label>
-            <label> <input name="skill-level" type="radio" class="input-radio" value="Intermediate"> Intermediate </label>
-            <label> <input name="skill-level" type="radio" class="input-radio" value="Advanced"> Advanced </label>
-        </div>
-        <div class="form-group">
-            <p> What do you care when seeing a website </p>
-            <select name="most-care" id="most-care" class="form-control">
+            <p> Purpose of contact </p>
+            <select name="contact-purpose" id="contact-purpose" class="form-control">
                 <option disabled selected value> Select an option </option>
-                <option value="Color">Color</option>
-                <option value="Content">Content</option>
-                <option value="Layout">Layout</option>
-                <option value="Media">Media</option>
+                <option value="Business">Business</option>
+                <option value="Personal">Personal</option>
             </select>
         </div>
         <div class="form-group">
-            <p> What do you want </p>
+            <label id="name-label" for="name"> Your name </label>
+            <input name="name" type="text" id="name" class="form-control"  maxlength="50" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+            <label id="email-label" for="email"> Your email </label>
+            <input name="email" type="email" id="email" class="form-control" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+            <label id="phone-label" for="phone"> Your phone </label>
+            <input name="phone" type="number" id="phone" class="form-control" placeholder="Enter your phone number" required>
+        </div>
+        <div class="form-group">
+            <p> Preferred contact method </p>
+            <label> <input name="contact-method" type="radio" class="input-radio" value="Email"> Email </label>
+            <label> <input name="contact-method" type="radio" class="input-radio" value="Phone"> Phone </label>
+        </div>
+        <div class="form-group">
+            <p> Contact day of the week </p>
+            <label> <input name="contact-day" type="checkbox" class="input-checkbox" value="Monday"> Monday </label>
+            <label> <input name="contact-day" type="checkbox" class="input-checkbox" value="Tuesday"> Tuesday </label>
+            <label> <input name="contact-day" type="checkbox" class="input-checkbox" value="Wedenesday"> Wedenesday </label>
+            <label> <input name="contact-day" type="checkbox" class="input-checkbox" value="Thursday"> Thursday </label>
+            <label> <input name="contact-day" type="checkbox" class="input-checkbox" value="Friday"> Friday </label>
+            <label> <input name="contact-day" type="checkbox" class="input-checkbox" value="Saturday"> Saturday </label>
+            <label> <input name="contact-day" type="checkbox" class="input-checkbox" value="Sunday"> Sunday </label>
+        </div>
+        <div class="form-group">
+            <label for="myFile">Your attachment</label>
+            <input name="myFile" type="file" id="myFile">
+        </div>
+        <div class="form-group">
+            <p> Your message </p>
             <textarea name="message" id="message" class="form-control" placeholder="Enter your messsage:">
             </textarea>
         </div>
         <div class="form-group">
-            <button type="submit" id="submit" class="submit-button">Submit</button>
+            <button type="submit" id="submit" value="Submit">Submit</button>
+            <button type="reset" id="clear" value="Clear">Clear</button>
         </div>
     </form>
+    </div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MfNP81Mr7Js" title="YouTube video player"
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
+<video id='nye' src='Minions.mp4' controls width=598 height=180>No Video For You!</video>
 </body>
 </html>
