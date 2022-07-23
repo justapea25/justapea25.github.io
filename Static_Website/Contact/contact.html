@@ -13,7 +13,9 @@
 <body>
     <header>
         <div id="logo">
-            <img src="../Images/logo.webp" alt="logo picture">
+            <a href="../index.html">
+                <img src="../Images/logo.webp" alt="logo picture">
+            </a>
         </div>
         <nav>
             <ul class="nav-links">
@@ -26,7 +28,7 @@
     <main>
         <div class="page-wrapper">
             <h1 id="title"> Contact Us</h1>
-            <form id="survey-form" action="processing.php" method="post" enctype="multipart/form-data">
+            <form id="survey-form" method="post" enctype="multipart/form-data">
                 <div class="form-group">
                     <p> Contact purpose </p>
                     <select name="contact-purpose" id="contact-purpose" class="form-control">
@@ -36,16 +38,16 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <label id="name-label" for="name"> Your name </label>
+                    <label for="name"> Your name </label>
                     <input name="name" type="text" id="name" class="form-control" maxlength="50" placeholder="Enter your name"
                         required>
                 </div>
                 <div class="form-group">
-                    <label id="email-label" for="email"> Your email </label>
+                    <label for="email"> Your email </label>
                     <input name="email" type="email" id="email" class="form-control" placeholder="Enter your email" required>
                 </div>
                 <div class="form-group">
-                    <label id="phone-label" for="phone"> Your phone </label>
+                    <label for="phone"> Your phone </label>
                     <input name="phone" type="number" id="phone" class="form-control" placeholder="Enter your phone number" required>
                 </div>
                 <div class="form-group">
@@ -59,7 +61,7 @@
                     <label> <input name="newsletter" type="radio" class="input-radio" value="No"> No </label>
                 </div>
                 <div class="form-group">
-                    <p> Your message to us</p>
+                    <p> Note: </p>
                     <textarea name="message" id="message" class="form-control" placeholder="Enter your messsage:">
                         </textarea>
                 </div>
@@ -73,10 +75,10 @@
     <footer>
         <ul>
             <li><a href="#">About Us</a></li>
-            <li><a href=#>Privacy Policy</a></li>
-            <li><a href=#>Terms</a></li>
-            <li><a href=#>Copyright</a></li>
-            <li><a href="./Contact/contact.html">Contact Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Copyright</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
         </ul>
         <p>Copyright by Dau Hoang Minh</p>
     </footer>

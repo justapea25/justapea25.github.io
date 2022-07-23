@@ -43,7 +43,7 @@ header {
     height: 70px;
 }
 
-#logo>img {
+#logo img {
     max-height: 100%;
     object-fit: contain;
 }
@@ -74,7 +74,6 @@ nav {
 .page-wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: baseline;
     margin-top: 100px;
     padding: 0 10rem;
 }
@@ -96,6 +95,7 @@ nav {
     display: flex;
     padding: 30px 0;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 .info-part {
     margin: 10px;
@@ -140,7 +140,8 @@ nav {
 }
 .book-description p {
     font-family: sans-serif;
-    padding: 8px;
+    padding: 8px 0;
+    line-height: 1.25;
 }
 /* Footer
 ------------------------------------*/
@@ -155,13 +156,15 @@ footer {
     font-style: bold;
 }
 
-footer>ul {
+footer > ul {
     display: flex;
     flex-direction: row;
     gap: 20px;
     font-weight: 600;
 }
-
+footer a:hover {
+    text-decoration: underline;
+}
 /* Responsive
 ------------------------------------*/
 @media screen and (min-width: 961px) {

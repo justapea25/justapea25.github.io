@@ -43,7 +43,7 @@ header {
     height: 70px;
 }
 
-#logo>img {
+#logo img {
     max-height: 100%;
     object-fit: contain;
 }
@@ -115,7 +115,6 @@ button {
     margin: 0 25px;
     padding: 8px 20px;
     background-color: orange;
-    
     border-radius: 3px;
 }
 /* Footer
@@ -131,13 +130,15 @@ footer {
     font-style: bold;
 }
 
-footer>ul {
+footer > ul {
     display: flex;
     flex-direction: row;
     gap: 20px;
     font-weight: 600;
 }
-
+footer a:hover {
+    text-decoration: underline;
+}
 /* Responsive
 ------------------------------------*/
 @media screen and (min-width: 961px) {
