@@ -127,7 +127,6 @@ footer {
     align-items: flex-end;
     flex-direction: column;
     gap: 10px;
-    font-style: bold;
 }
 
 footer > ul {

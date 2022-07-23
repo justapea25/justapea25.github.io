@@ -153,7 +153,6 @@ footer {
     align-items: flex-end;
     flex-direction: column;
     gap: 10px;
-    font-style: bold;
 }
 
 footer > ul {
@@ -177,7 +176,7 @@ footer a:hover {
     .info-part {
         height: 500px;
     }
-    #book-small-img>img {
+    #book-small-img > img {
         width: 90%;
         max-height: calc(100% / 3);
     }
@@ -200,7 +199,7 @@ footer a:hover {
         max-width: 100%;
     }
     #book-small-img > img {
-        max-width: calc(100%/3);
+        max-width: calc(100% / 3);
         height: 100%;
     }
 }

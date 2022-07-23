@@ -90,7 +90,7 @@ nav {
 
 .books-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
     grid-gap: 4rem;
     width: 100%;
     max-width: 1300px;
@@ -118,7 +118,6 @@ footer {
     align-items: flex-end;
     flex-direction: column;
     gap: 10px;
-    font-style: bold;
 }
 
 footer > ul {
