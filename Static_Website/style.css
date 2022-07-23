@@ -16,8 +16,8 @@ a, a:visited {
     color: inherit;
 }
 h2 {
-    font-size: 2.2rem;
     padding: 30px;
+    font-size: 2.2rem;
 }
 .page-wrapper {
     margin-top: 100px;
@@ -82,7 +82,7 @@ nav {
     margin-bottom: 6rem;
 }
 .book-image {
-    height: calc(100% - 6.8rem);
+    height: calc(100% - 6.7rem);
     width: 100%;
     object-fit: cover;
 }
@@ -104,10 +104,10 @@ nav {
 /* Contact Page
 ------------------------------------*/
 form {
-    background: white;
     padding: 1rem 0.75rem;
-    border-radius: 8px;
     margin-top: 2rem;
+    border-radius: 8px;
+    background: white;
 }
 label {
     display: flex;
@@ -124,12 +124,10 @@ label {
     height: 2rem;
     padding: 5px;
 }
-
 #button-list {
     display: flex;
     justify-content: center;
 }
-
 #button-list button {
     display: inline-block;
     margin: 0 25px;
@@ -176,29 +174,29 @@ label {
     object-fit: contain;
 }
 #buy-book {
-    font-size: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
+    font-size: 2rem;
 }
 #buy-book h2 {
-    font-size: 3.5rem;
     padding-top: 0;
+    font-size: 3.5rem;
 }
 #buy-book button {
     margin: 20px 0px;
     padding: 20px;
 }
 .book-description h2 {
-    font-size: 2.5rem;
     padding: 10px 0;
+    font-size: 2.5rem;
 }
 .book-description p {
-    font-family: sans-serif;
     padding: 8px 0;
     line-height: 1.25;
+    font-family: sans-serif;
 }
 @media screen and (min-width: 961px) {
     .info-part {
@@ -224,13 +222,13 @@ label {
 /* Footer
 ------------------------------------*/
 footer {
-    margin-top: 30px;
-    background-color: #ddd;
-    padding: 20px;
     display: flex;
     align-items: flex-end;
     flex-direction: column;
     gap: 10px;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #ddd;
 }
 
 footer > ul {
