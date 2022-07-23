@@ -1,0 +1,174 @@
+/* Global style
+------------------------------------*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+h2 {
+    font-size: 2.2rem;
+    padding: 30px;
+}
+
+/* Header
+------------------------------------*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    width: 100vw;
+    background-color: orange;
+}
+
+#logo {
+    object-fit: cover;
+}
+
+#logo>img {
+    max-height: 100%;
+    object-fit: contain;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.nav-links {
+    display: flex;
+
+}
+
+.nav-links a {
+    display: inline-block;
+    padding: 20px;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    color: white;
+}
+
+/* Main
+------------------------------------*/
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    padding-left: 3rem;
+    min-height: 320px;
+    margin-top: 100px;
+}
+
+/* Breadcumb
+------------------------------------*/
+.path {
+    display: inline-flex;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.breadcrumb a:hover {
+    color: orange;
+}
+
+/* Book information
+------------------------------------*/
+.book-info {
+    display: flex;
+}
+.info-part {
+    height: 700px;
+    padding: 30px 0;
+}
+#book-large-img {
+    min-width: 30%;
+}
+#book-small-img {
+    min-width: 30%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#buy-book {
+    font-size: 2rem;
+    min-width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#buy-book h2 {
+    font-size: 3.5rem;
+    padding-top: 0;
+}
+#buy-book button {
+    margin: 0 10px;
+    padding: 10px;
+}
+#book-large-img > img {
+    max-width: 100%;
+    height: 100%;
+    /* object-fit: contain; */
+}
+#book-small-img > img {
+    width: 80%;
+    max-height: calc(100% / 3);
+    object-fit: cover;
+    border: 2px solid black;
+}
+/* Book description
+------------------------------------*/
+.book-description h2 {
+    font-size: 2.5rem;
+    padding: 10px 0;
+}
+.book-description p {
+    font-family: sans-serif;
+    padding: 8px 0;
+}
+/* Footer
+------------------------------------*/
+footer {
+    margin-top: 30px;
+    background-color: #ddd;
+    padding: 20px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 10px;
+    font-style: bold;
+}
+
+footer>ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-weight: 600;
+}
+
+/* Responsive
+------------------------------------*/
