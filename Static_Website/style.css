@@ -1,9 +1,7 @@
 /* Global style
 ------------------------------------*/
-
 body {
     font-family: 'Montserrat', sans-serif;
-
 }
 * {
     box-sizing: border-box;
@@ -20,6 +18,10 @@ a, a:visited {
 h2 {
     font-size: 2.2rem;
     padding: 30px;
+}
+.page-wrapper {
+    margin-top: 100px;
+    padding: 0 5rem;
 }
 /* Header
 ------------------------------------*/
@@ -57,19 +59,18 @@ nav {
 .nav-links a:hover {
     color: white;
 }
-/* Main
+/* Home Page & Category page
 ------------------------------------*/
 .category {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     min-height: 320px;
 }
 .category a:hover {
     color: orange;
 }
-#fiction {
-    margin-top: 70px;
+.title {
+    font-size: 3.2rem;
+    text-align: center;
 }
 .books-grid {
     display: grid;
@@ -90,7 +91,136 @@ nav {
     font-size: 2rem;
     padding: 2rem;
 }
+@media screen and (max-width: 960px) {
+    header,
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    .page-wrapper {
+        margin-top: 200px;
+    }
+}
+/* Contact Page
+------------------------------------*/
+form {
+    background: white;
+    padding: 1rem 0.75rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+label {
+    display: flex;
+}
+.form-group {
+    margin: 0 auto 1.25rem auto;
+}
+.input-radio,
+.input-checkbox {
+    margin-right: 0.5rem;
+}
+.form-control {
+    width: 100%;
+    height: 2rem;
+    padding: 5px;
+}
 
+#button-list {
+    display: flex;
+    justify-content: center;
+}
+
+#button-list button {
+    display: inline-block;
+    margin: 0 25px;
+    padding: 8px 20px;
+    background-color: orange;
+    border-radius: 3px;
+}
+@media screen and (min-width: 961px) {
+    .form-group {
+            display: flex;
+    } 
+    .form-group > label, .form-group > p {
+        min-width: 10%;
+        padding-right: 10px;
+    }
+}
+/* Book details page
+------------------------------------*/
+.path {
+    display: inline-flex;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.breadcrumb a:hover {
+    color: orange;
+}
+.book-info {
+    display: flex;
+    padding: 30px 0;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.info-part {
+    margin: 10px;
+}
+#book-small-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+#book-small-img > img {
+    padding: 5px;
+    object-fit: contain;
+}
+#buy-book {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+#buy-book h2 {
+    font-size: 3.5rem;
+    padding-top: 0;
+}
+#buy-book button {
+    margin: 20px 0px;
+    padding: 20px;
+}
+.book-description h2 {
+    font-size: 2.5rem;
+    padding: 10px 0;
+}
+.book-description p {
+    font-family: sans-serif;
+    padding: 8px 0;
+    line-height: 1.25;
+}
+@media screen and (min-width: 961px) {
+    .info-part {
+        height: 500px;
+    }
+    #book-small-img > img {
+        max-height: calc(100% / 3);
+    }
+}
+@media screen and (max-width: 960px) {
+    .book-info {
+        flex-direction: column;
+        align-items: center;
+    }
+    #book-small-img {
+        flex-direction: row;
+        max-width: 100%;
+    }
+    #book-small-img > img {
+        max-width: calc(100% / 3);
+    }
+}
 /* Footer
 ------------------------------------*/
 footer {
@@ -112,19 +242,4 @@ footer > ul {
 footer a:hover {
     text-decoration: underline;
 }
-/* Responsive
-------------------------------------*/
-@media screen and (min-width: 961px) {
-    header {
-        flex-direction: row;
-    }
-}
-@media screen and (max-width: 960px) {
-    header, .nav-links {
-        flex-direction: column;
-        align-items: center;
-    }
-    #fiction {
-        margin-top: 200px;
-    }
-}
+
