@@ -137,11 +137,14 @@ label {
 }
 @media screen and (min-width: 961px) {
     .form-group {
-            display: flex;
+        display: flex;
     } 
     .form-group > label, .form-group > p {
-        min-width: 10%;
-        padding-right: 10px;
+        min-width: 15%;
+        padding-right: 20px;
+    }
+    #radio-qs, #checkbox-qs {
+        min-width: 35%;
     }
 }
 /* Book details page
