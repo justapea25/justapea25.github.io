@@ -29,12 +29,11 @@ header {
     left: 0;
     display: flex;
     justify-content: space-between;
-    height: 70px;
     width: 100vw;
     background-color: orange;
 }
 #logo {
-    object-fit: cover;
+    height: 70px;
 }
 #logo > img {
     max-height:100%;
@@ -47,11 +46,10 @@ nav {
 }
 .nav-links {
     display: flex;
-
 }
 .nav-links a {
     display: inline-block;
-    padding: 20px;
+    padding: 10px 20px;
     color: black;
     font-size: 1.1rem;
     font-weight: 600;
@@ -115,3 +113,17 @@ footer > ul {
 }
 /* Responsive
 ------------------------------------*/
+@media screen and (min-width: 961px) {
+    header {
+        flex-direction: row;
+    }
+}
+@media screen and (max-width: 960px) {
+    header, .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    #fiction {
+        margin-top: 200px;
+    }
+}

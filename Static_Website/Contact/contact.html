@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Bookstore</title>
-    <link rel="stylesheet" href="book.css">
+    <link rel="stylesheet" href="contact.css">
     <link href="https://fonts.googleapis.com/css?family=Caveat|Montserrat:400,600&display=swap" rel="stylesheet">
 </head>
 
@@ -20,74 +20,54 @@
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="../Fiction_category/fiction.html">Fiction</a></li>
                 <li><a href="../Non-fiction_category/non-fiction.html">Non-fiction</a></li>
-                <li><a href=#>Blog</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <div class="page-wrapper">
-            <div class="breadcrumb">
-                <a class="path" href="index.html">Home</a>
-                <span class="path"> > </span>
-                <a class="path" href="../Fiction_category/fiction.html">Fiction</a>
-                <span class="path"> > </span>
-                <p class="path">To Paradise by Hanya Yanagihara</p>
-            </div>
-            <div class="book-info">
-                <div class="info-part" id="book-large-img">
-                    <img src="../Images/book.jpg" alt="To Paradise by Hanya Yanagihara">
+            <h1 id="title"> Contact Us</h1>
+            <form id="survey-form" action="processing.php" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <p> Contact purpose </p>
+                    <select name="contact-purpose" id="contact-purpose" class="form-control">
+                        <option disabled selected value> Select an option </option>
+                        <option value="I want to sell books">I want to sell books</option>
+                        <option value="I want to buy books">I want to buy books</option>
+                    </select>
                 </div>
-                <div class="info-part" id="book-small-img">
-                    <img src="../Images/small-img-1.webp" alt="To Paradise by Hanya Yanagihara">
-                    <img src="../Images/small-img-2.jpeg" alt="To Paradise by Hanya Yanagihara">
-                    <img src="../Images/small-img-3.jpeg" alt="To Paradise by Hanya Yanagihara">
+                <div class="form-group">
+                    <label id="name-label" for="name"> Your name </label>
+                    <input name="name" type="text" id="name" class="form-control" maxlength="50" placeholder="Enter your name"
+                        required>
                 </div>
-                <div class="info-part" id="buy-book">
-                    <h2>Book Price</h2>
-                    <p>$20.00
-                    <p>
-                        <button>Add to cart</button>
+                <div class="form-group">
+                    <label id="email-label" for="email"> Your email </label>
+                    <input name="email" type="email" id="email" class="form-control" placeholder="Enter your email" required>
                 </div>
-            </div>
-            <div class="book-description">
-                <h2>To Paradise by Hanya Yanagihara</h2>
-                <p><b>#1 NEW YORK TIMES BEST SELLER • From the award-winning, best-selling author of the classic A
-                        Little Life—a bold,
-                        brilliant novel spanning three centuries and three different versions of the American
-                        experiment, about lovers, family,
-                        loss and the elusive promise of utopia.</b></p>
-
-                <p>To Paradise is a fin de siècle novel of marvelous literary effect, but above all it is a work of
-                    emotional genius. The
-                    great power of this remarkable novel is driven by Yanagihara’s understanding of the aching desire to
-                    protect those we
-                    love—partners, lovers, children, friends, family, and even our fellow citizens—and the pain that
-                    ensues when we cannot.</p>
-
-                <p>In an alternate version of 1893 America, New York is part of the Free States, where people may live
-                    and love whomever
-                    they please (or so it seems). The fragile young scion of a distinguished family resists betrothal to
-                    a worthy suitor,
-                    drawn to a charming music teacher of no means. In a 1993 Manhattan besieged by the AIDS epidemic, a
-                    young Hawaiian man
-                    lives with his much older, wealthier partner, hiding his troubled childhood and the fate of his
-                    father. And in 2093, in
-                    a world riven by plagues and governed by totalitarian rule, a powerful scientist’s damaged
-                    granddaughter tries to
-                    navigate life without him—and solve the mystery of her husband’s disappearances.</p>
-
-                <p>These three sections comprise an ingenious symphony, as recurring notes and themes deepen and enrich
-                    one another: A
-                    townhouse in Washington Square Park in Greenwich Village; illness, and treatments that come at a
-                    terrible cost; wealth
-                    and squalor; the weak and the strong; race; the definition of family, and of nationhood; the
-                    dangerous righteousness of
-                    the powerful, and of revolutionaries; the longing to find a place in an earthly paradise, and the
-                    gradual realization
-                    that it can’t exist. What unites not just the characters, but these Americas, are their reckonings
-                    with the qualities
-                    that make us human: Fear. Love. Shame. Need. Loneliness.</p>
-            </div>
+                <div class="form-group">
+                    <label id="phone-label" for="phone"> Your phone </label>
+                    <input name="phone" type="number" id="phone" class="form-control" placeholder="Enter your phone number" required>
+                </div>
+                <div class="form-group">
+                    <p> How can we contact you? </p>
+                    <label> <input name="contact-method" type="checkbox" class="input-checkbox" value="By email" required> By email </label>
+                    <label> <input name="contact-method" type="checkbox" class="input-checkbox" value="By phone"> By phone </label>
+                </div>
+                <div class="form-group">
+                    <p> Do you want to receive our weekly newsletter? </p>
+                    <label> <input name="newsletter" type="radio" class="input-radio" value="Yes" checked required> Yes </label>
+                    <label> <input name="newsletter" type="radio" class="input-radio" value="No"> No </label>
+                </div>
+                <div class="form-group">
+                    <p> Your message to us</p>
+                    <textarea name="message" id="message" class="form-control" placeholder="Enter your messsage:">
+                        </textarea>
+                </div>
+                <div class="form-group" id="button-list">
+                    <button type="submit" id="submit" value="Submit">Submit</button>
+                    <button type="reset" id="reset" value="Reset">Reset</button>
+                </div>
+            </form>
         </div>
     </main>
     <footer>
